@@ -6,6 +6,7 @@ export default function Topbar() {
     <div className="topbarContainer">
      <div className="topbarLeft">
      <span className="logo">GetSocial</span>
+     
      </div>
      <div className="topbarCenter">
       <div className="searchbar">

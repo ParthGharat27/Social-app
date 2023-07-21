@@ -8,6 +8,8 @@ import { Help } from "@mui/icons-material";
 import { WorkOutline } from "@mui/icons-material";
 import { EventNote } from "@mui/icons-material";
 import { School } from "@mui/icons-material";
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 
 export default function Sidebar() {
   return (
@@ -65,40 +67,11 @@ export default function Sidebar() {
       </button>
       <hr className="sidebarHr"/>
       <ul className="sidebarFriendList">
-      <li className="sidebarFriend">
-        <img className="sidebarFriendImg" src="/assets/people/2.png" alt=""/>
-        <span className="sidebarFriendName">Celina Wood</span>
-      </li>
+      {Users.map((u) => (
+        <CloseFriend key={u.id} user={u} />
+      ))}
 
-      <li className="sidebarFriend">
-        <img className="sidebarFriendImg" src="/assets/people/2.png" alt=""/>
-        <span className="sidebarFriendName">Celina Wood</span>
-      </li>
-
-      <li className="sidebarFriend">
-        <img className="sidebarFriendImg" src="/assets/people/2.png" alt=""/>
-        <span className="sidebarFriendName">Celina Wood</span>
-      </li>
-
-      <li className="sidebarFriend">
-        <img className="sidebarFriendImg" src="/assets/people/2.png" alt=""/>
-        <span className="sidebarFriendName">Celina Wood</span>
-      </li>
-
-      <li className="sidebarFriend">
-        <img className="sidebarFriendImg" src="/assets/people/2.png" alt=""/>
-        <span className="sidebarFriendName">Celina Wood</span>
-      </li>
-
-      <li className="sidebarFriend">
-        <img className="sidebarFriendImg" src="/assets/people/2.png" alt=""/>
-        <span className="sidebarFriendName">Celina Wood</span>
-      </li>
-
-      <li className="sidebarFriend">
-        <img className="sidebarFriendImg" src="/assets/people/2.png" alt=""/>
-        <span className="sidebarFriendName">Celina Wood</span>
-      </li>
+      
       </ul>
       </div>
     </div>
